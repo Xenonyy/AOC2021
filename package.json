@@ -1,0 +1,30 @@
+{
+  "name": "aoc2021",
+  "version": "1.0.0",
+  "description": "Advent of Code 2021",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "part-1": "ts-node current-day/part-1.ts",
+    "part-2": "ts-node current-day/part-2.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xenonyy/AOC2021.git"
+  },
+  "keywords": [
+    "Advent",
+    "of",
+    "Code"
+  ],
+  "author": "Xenon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xenonyy/AOC2021/issues"
+  },
+  "homepage": "https://github.com/Xenonyy/AOC2021#readme"
+}
