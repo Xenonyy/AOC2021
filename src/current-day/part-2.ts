@@ -1,13 +1,21 @@
 import input from './input';
 
-let counter = 0;
+let posX = 0;
+let posY = 0;
+let aim = 0;
 
-for (let i: number = 0; i < input.length; i++) {
-  if (
-    input[i] + input[i + 1] + input[i + 2] <
-    input[i + 1] + input[i + 2] + input[i + 3]
-  ) {
-    counter++;
+input.map((e: [string, number]) => {
+  if (e[0] === 'down') aim += e[1]
+  if (e[0] === 'up') aim -= e[1]
+  if (e[0] === 'forward') {
+    
+    posX += e[1];
+    posY += aim * e[1];
   }
-  console.log(counter);
-}
+
+  console.log(posX, posY, aim);
+});
+
+const finalPosition = posX * posY;
+
+console.log(finalPosition);
